@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap&family=Poppins&family=Source+Sans+Pro&family=Varela+Round&display=swap");
+
+* {
+	font-family: "Asap", sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	display: flex;
+	padding: 25px;
+}
+
+aside {
+	flex-basis: 22%;
+	text-align: center;
+	padding-left: 25px;
+}
+
+h2 {
+	color: #34aee2;
+}
+
+h3 {
+	padding-top: 2rem;
+	color: #1b6483;
+}
+
+p {
+	font-size: 18px;
+}
+
+header {
+	display: inline;
+}
+
+nav {
+	top: 0;
+	background-color: #288bb6;
+	position: sticky;
+	padding: 5px;
+}
+
+nav li {
+	display: inline;
+	list-style-type: none;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	margin-right: 2rem;
+}
+
+nav a:hover {
+	color: rgb(184, 184, 184);
+}
+
+img {
+	max-height: 400px;
+	width: 100%;
+	border-radius: 4px;
+	object-fit: cover;
+	object-position: center;
+}
+
+footer {
+	background-color: #34aee2;
+	text-align: center;
+	color: white;
+	padding: 30px;
+}
+
+.jumbotron {
+	padding: 5em;
+	background-color: #34aee2;
+	color: white;
+	text-align: center;
+}
+
+.logo {
+	width: 250px;
+}
+
+.container {
+	flex-basis: 80%;
+	box-sizing: content-box;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.card {
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	margin-top: 20px;
+}
+
+.border-width {
+	width: 100%;
+	border-collapse: collapse;
+	border-radius: 2rem;
+}
+
+.border {
+	padding: 5px;
+	border: 2px solid #288bb6;
+	text-align: left;
+}
+
+.profile {
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	margin-top: 20px;
+	font-size: 15px;
+}
+
+.center {
+	text-align: center;
+}
+
+.border-aside {
+	margin: 0 auto;
+	padding-top: 5px;
+	text-align: center;
+}
+
+.profile-image {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	object-position: top;
+}
+
+@media screen and (max-width: 768px) {
+	h2,
+	h3 {
+		text-align: center;
+	}
+
+	main {
+		flex-direction: column;
+	}
+
+	aside {
+		padding: 0;
+		text-align: center;
+	}
+
+	.border-aside {
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	nav {
+		display: hidden;
+	}
+
+	ul {
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	nav li {
+		top: 0;
+		padding: 1em;
+		display: block;
+		text-align: center;
+	}
+
+	nav a {
+		margin: 0;
+	}
+}
